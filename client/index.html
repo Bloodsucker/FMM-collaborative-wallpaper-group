@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="style/style.css" type="text/css" rel="stylesheet" />
+
+	<title></title>
+</head>
+<body>
+
+	<div id="mainApp">
+		<canvas id="drawSection">
+		</canvas>
+		<div id="toolbar">
+			<form>
+				<fieldset>
+					<legend>Project settings</legend>
+					<label for="nameProject">Project name : </label><input id="nameProject" type="text" value="" />
+				</fieldset>
+				<fieldset>
+					<legend>Picture</legend>
+					<label for="pictureUplodad">Upload picture : </label> <input id="pictureUplodad" type="file" />
+				</fieldset>
+				<fieldset>
+					<legend>Draw fundamental domain</legend>
+					<button id="drawLineFDB" type="button">Linea</button>
+				</fieldset>
+				<fieldset>
+					<legend>Manage classes of symetry</legend>
+					<div id="shapePanel">
+						<div id="shapeButton">
+							<button id="drawShapeRhombusB" type="button">Rhombus</button>
+							<button id="drawShapeTriangleB" type="button">Triangle</button>
+							<button id="drawShapeSquareB" type="button">Square</button>
+							<button id="drawShapeHexagonB" type="button">Hexagon</button>
+						</div>
+						<div id="shapeSetting">
+							<input id="shapeRotation" type="text" />
+							<select id="shapeColor">
+								<option value="red">Red</option>
+								<option value="blue">Blue</option>
+								<option value="green">Green</option>
+								<option value="yellow">Yellow</option>
+							</select>
+						</div>
+					</div>
+					<div id="linePanel">
+						<div id="lineButton">
+							<button id="drawSolidLine" type="button">Solid</button>
+							<button id="drawDottedLine" type="button">Dotted</button>
+						</div>
+						<div id="lineSetting">
+							<select id="lineColor">
+								<option value="red">Red</option>
+								<option value="blue">Blue</option>
+								<option value="green">Green</option>
+								<option value="yellow">Yellow</option>
+							</select>
+						</div>
+					</div>
+				</fieldset>
+				<button id="saveB">Save</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
